@@ -3,15 +3,16 @@
  * @email  rancho941110@gmail.com
  * @date   2016-04-21 00:09:56
  * @brief
- *
+ * definition of class Vector
  */
 #pragma once
 
- typedef int Rank;	//定义秩
- #define DEFAULT_CAPACITY 3		//默认初始容量
 
- template <typename T>
- class Vector {
+typedef int Rank;	//定义秩
+#define DEFAULT_CAPACITY 3		//默认初始容量
+
+template <typename T>
+class Vector {
 protected:
 	Rank _size;		//规模
 	int _capacity;	//容量
