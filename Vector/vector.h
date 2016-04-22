@@ -48,7 +48,7 @@ public:
 //析构函数
 	~Vector() { delete [] _elem; }//释放内部数组空间
 
-//只读访问jiekou
+//只读访问接口
 	Rank size() const { return _size; }//规模
 	bool empty() const { return !_size; }//判空
 	int disordered() const;//判断向量是否已经排序
