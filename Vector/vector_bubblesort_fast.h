@@ -12,3 +12,4 @@ void Vector<T>::bubbleSort(Rank lo, Rank hi) {
 	//assert: 0 <= lo < hi <= size
 	while (lo < (hi = bubble(lo, hi)));
 }
+//每次比较的对象为最右侧逆序对的位置

@@ -17,3 +17,5 @@ Rank Vector<T>::bubble(Rank lo, Rank hi) {
 		}
 	return last;
 }
+//改进的思路在于将整体有序标志替换为最右侧逆序对的位置
+//这样在while循环中可以直接让hi跳过有序片段
