@@ -17,3 +17,8 @@ static Rank binSearch(T* a, T const & e, Rank lo, Rank hi) {
 	return --lo;
 }//存在多个命中元素时, 总能保证返回秩最大者
 // 查找失败时, 返回失败的位置
+
+// 与version B的差异:
+// 1. 待查找区间宽度缩短至0而非1时, 算法才结束
+// 2. 两个分支为[lo, mid)和(mid, hi) ---- 没有mid
+// 3. 返回的秩符合接口的语义约定
