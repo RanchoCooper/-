@@ -6,10 +6,17 @@
  * implement of class Vector
  */
 #pragma once
-#include <stdio.h>
 
-int main(int argc, char const *argv[]) {
+//用函数指针或函数对象来遍历
+template <typename T>
+void Vector<T>::traverse(void(*visit) (T&)) {//函数指针机制
+	for (int i = 0; i < _size; ++i)
+		visit(_elem[i]);
+}
 
-	getchar();
-	return 0;
+template <typename T>
+template <typename VST>
+void Vector<T>::traverse(VST& visit) {//函数对象机制
+	for (int i = 0; i < _size; ++i)
+		visit(_elem[i]);
 }
