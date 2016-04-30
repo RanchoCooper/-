@@ -12,6 +12,7 @@
 #include "vector_bubble_fast.h"
 //#include "vector_bubblesort.h"
 #include "vector_bubblesort_fast.h"
+#include "vector_bracket.h"
 #include "vector_cope.h"
 #include "vector_disorderd.h"
 #include "vector_expand.h"
