@@ -82,3 +82,5 @@ public:
 	void traverse(VST&);//使用函数对象遍历, 可全局性修改
 
 };
+
+#include "vector_implementation.h"
