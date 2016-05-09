@@ -22,7 +22,7 @@ ListNodePosi(T) List<T>::insertAfter(ListNodePosi(T) p, const& e) { //作为后�
 	return p->insertAsSucc(e);
 }
 template <typename T>
-ListNodePosi(T) List<T>::insertBefor(ListNodePosi(T), const& e) { //作为前驱插入
+ListNodePosi(T) List<T>::insertBefore(ListNodePosi(T), const& e) { //作为前驱插入
 	_size++;
 	return p->insertAsPred(e);
 }
